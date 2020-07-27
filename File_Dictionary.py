@@ -16,6 +16,6 @@ with open('test_file.txt', 'r') as reader:
             TCGA = x
             Hugo_dict= dict(zip(Hugo_symbol, TCGA))
             print(Hugo_dict)   
-#gonna work some more on this tomorrow I know that this is incorrect. I cannot seem to access the values using the keys. It should just be one dictionary but the for loop makes it multiple
+#gonna work some more  I know that this is incorrect. I cannot seem to access the values using the keys. It should just be one dictionary but the for loop makes it multiple
 
 
