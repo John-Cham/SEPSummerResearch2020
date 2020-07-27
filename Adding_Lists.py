@@ -2,14 +2,14 @@ a = [1,2,3,4,5,6]
 b = [3,4,5,6,7,8]
 c= [5,6,7,8,9,10]
 
-x= zip(a,b,c)
-n= 3
-#I should find a way to have n be calculated instead of me knowing it is 3
-# len(x) doesnt work
+abc= list(zip(a,b,c))
+length_abc= len(abc[0])
 
+def division(value):
+    return(value/length_abc)
 
-y= map(sum,x)
+sum_abc= map(sum,abc)
 
-for i in y:
-    mean= (i/n)
-    print(mean)
+mean = map(division, sum_abc)
+print(list(mean))
+

@@ -2,14 +2,12 @@ import os
 
 os.chdir('/Users/John/Downloads/')
 
-def List_Maker(string): 
-    li = list(string.split("\t"))
-    return li
-
 
 with open('test_file.txt', 'r') as reader:
-    x= List_Maker(reader.readline())
-    for i in x: 
-            x= List_Maker(reader.readline())   
-            print(x[0])
+    next(reader)
+    #I did this because I was unable to take notes on how you were able to skip the first line
+    for line in reader:
+        meth_data= line.strip().split('\t')
+        print(meth_data[0])
         
+    
