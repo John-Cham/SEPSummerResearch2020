@@ -19,4 +19,3 @@ for x in hugo_symbol:
          duplicates.append(x)
       unique[x] += 1
 print(duplicates)
- 
